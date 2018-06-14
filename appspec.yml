@@ -1,30 +1,9 @@
 version: 0.0
 os: linux
 files:
-   - source: /
-<<<<<<< HEAD
-     destination: /var/www/html
-permissions:
-   - object: /var/www/html
-     pattern: "**"
-     owner: apache
-     group: apache
-     mode: 755
-     type:
-       - file
+  - source: /
+    destination: /var/www/html/
 hooks:
-   BeforeInstall:
-    - location: scripts/installapache.sh
+  BeforeInstall:
+    - location: scripts/gitpull.sh
       runas: root
-=======
-     destination: /var/www
-permissions:
-   - object: /var/www
-     pattern: "**"
-     owner: apache
-     group: apache
-     mode: 644
-     type:
-       - file
->>>>>>> c3bee808d6808cf78261653a66c196cd6a7bb16e
-
