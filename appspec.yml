@@ -3,7 +3,3 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/
-hooks:
-  BeforeInstall: scripts/gitpull.sh
-    - location: 
-      runas: root
