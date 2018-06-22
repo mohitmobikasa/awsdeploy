@@ -5,5 +5,5 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: scripts/unzip.sh
+    - location: 
       runas: root
