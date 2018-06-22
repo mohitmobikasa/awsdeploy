@@ -5,5 +5,5 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: scripts/gitpull.sh
+    - location: scripts/unzip.sh
       runas: root
